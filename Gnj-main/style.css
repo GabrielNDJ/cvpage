@@ -1,0 +1,631 @@
+* {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+
+/* ----------------------------SCROOLL ESTILO-------------------------- */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #0f0;
+  border-radius: 5px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 5px;
+  height: 40%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #571ef3;
+}
+
+
+/* ----------------- EFECTO MATRIX---------------------------------  */
+
+header {
+  background-color: black;
+}
+
+#canv {
+  width: 100%;
+  height: 100px;
+  border-bottom: 0ch;
+}
+
+
+/* ----------------BOTON SUBIR------------ */
+
+.btn-scrolltop {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 15px;
+  background: #0f0;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: 0.3s;
+}
+
+.btn-scrolltop-on {
+  transform: translateY(0);
+}
+
+
+/* ----------------NAV------------ */
+
+#menu {
+  position: absolute;
+  place-content: top;
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0%;
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo {
+  position: static;
+  width: 60px;
+  height: 55px;
+  left: 0;
+  align-items: center;
+  padding: 0px 0px 0px 0px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: Roboto, "sans-serif";
+  font-weight: bold;
+  font-size: 1rem;
+  width: max-content;
+}
+
+.navbar ul li::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: yellowgreen;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+  width: 100%;
+}
+
+
+/* ----------------PORTADA------------ */
+
+#portada {
+  height: 100%;
+  background-image: url("imagen/portada.jpg");
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  color: antiquewhite;
+}
+
+#textocaja {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+#sobremi {
+  width: 500px;
+  margin-top: 50px;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#sobremi p {
+  margin-top: 10px;
+  margin-left: 16px;
+  text-indent: 60px;
+  letter-spacing: 0.3px;
+  font-size: 1rem;
+  text-shadow: 2px 2px 9px whitesmoke;
+}
+
+
+/* ----------------BOTON DE DESCARGA------------ */
+
+.btn-neon {
+  animation: tada;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  margin-top: 16px;
+  margin-left: 120px;
+  position: relative;
+  display: inline-block;
+  padding: 15px 10px;
+  padding-left: 5px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 18px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.btn-neon:hover {
+  text-decoration: none;
+  background: #0f0;
+  box-shadow: 0 0 10px #0f0, 0 0 40px #0f0, 0 0 80px #0f0;
+  transition-delay: 1s;
+}
+
+.btn-neon span {
+  position: absolute;
+  display: block;
+}
+
+#s1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0f0);
+}
+
+.btn-neon:hover #s1 {
+  left: 100%;
+  transition: 1s;
+}
+
+#s3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #0f0);
+}
+
+.btn-neon:hover #s3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#s2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #0f0);
+}
+
+.btn-neon:hover #s2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#s4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #0f0);
+}
+
+.btn-neon:hover #s4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+
+/* ----------------ICONOS ENLACE PORTADA------------ */
+
+#enlacesiconos {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.icon-linkedin {
+  display: inline-block;
+  color: blue;
+  background-color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  margin-right: 20px;
+  border-radius: 10%;
+}
+
+.icon-linkedin:hover {
+  display: inline-block;
+  animation: heartBeat;
+  animation-duration: 5s;
+}
+
+.icon-github {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  font-size: 3rem;
+  cursor: pointer;
+  margin-right: 50px;
+  border-radius: 50%;
+}
+
+.icon-github:hover {
+  display: inline-block;
+  animation: heartBeat;
+  animation-duration: 5s;
+}
+
+.icon-link {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  font-size: 3rem;
+  cursor: pointer;
+  margin-right: 50px;
+  border-radius: 50%;
+}
+
+.icon-link:hover {
+  display: inline-block;
+  animation: heartBeat;
+  animation-duration: 5s;
+}
+
+
+/* ----------------SKILLS------------ */
+
+.clients {
+  padding-bottom: 50px;
+  background-color: #1e1e1e;
+}
+
+.section-heading {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 100px;
+  color: #ffffff;
+}
+
+.section-txt {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+}
+
+.skills {
+  max-width: 14440px;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #070707;
+}
+
+.skills::before,
+.skills::after {
+  content: "";
+  width: 200px;
+  height: 100%;
+  position: absolute;
+}
+
+.skills::before {
+  background-image: linear-gradient(to left,
+      rgba(255, 255, 255, 0) 0,
+      #fff 100%);
+  z-index: 1;
+}
+
+.skills::after {
+  background-image: linear-gradient(to left,
+      #fff 0,
+      rgba(255, 255, 255, 0) 100%);
+  right: 0;
+}
+
+.skills .client-banners {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  animation: slide 20s linear infinite;
+}
+
+.client-banners img {
+  max-height: 100%;
+  margin: 0 50px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* ----------------PORFOLIO------------ */
+
+#portfolio {
+  background: #070707;
+}
+
+#portfolio h1 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: 900;
+  color: transparent;
+  background-image: url(https://media.giphy.com/media/Q34Q46x7bUUKJfbn0s/giphy-downsized-large.gif);
+  background-position: center;
+  -webkit-background-clip: text;
+}
+
+.carrousel {
+  width: 100%;
+}
+
+.conteCarrousel {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.itemCarrousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselTarjeta {
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 45%;
+  position: absolute;
+}
+
+.itemCarrouselArrows {
+  position: static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.itemCarrouselArrows>i:hover {
+  cursor: pointer;
+}
+
+#itemCarrousel-1 {
+  background-image: url("imagen/porfolio1.png");
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#itemCarrousel-2 {
+  background-image: url("imagen/terminator-genesis_2880x1800_xtrafondos.com.jpg");
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#itemCarrousel-3 {
+  background-image: url("imagen/portada.jpg");
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.conteCarrouselController {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.conteCarrouselController>a {
+  text-decoration: none;
+  font-size: 2em;
+  color: rgba(0, 255, 0, 0.568);
+}
+
+.itemCarrouselArrows>a>i {
+  color: #0f0;
+  text-shadow: 2px 2px 2px rgba(0, 255, 0, 0.377);
+}
+
+
+/* ---------------------CONTACTO----------------- */
+
+footer {
+  background-image: linear-gradient(120deg, rgb(30, 141, 30) 0%, #571ef3 100%);
+  background-size: cover;
+  font-size: 1.2rem;
+}
+
+.contact {
+  margin-left: 20px;
+}
+
+#contactarse {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 20px;
+}
+
+.location {
+  grid-column: 1 / 4;
+}
+
+.mail {
+  grid-column: 7 / 10;
+}
+
+.datoscliente {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-control {
+  height: 80%;
+  width: 80%;
+  outline: none;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+#asunto {
+  width: 90%;
+}
+
+#mensaje {
+  width: 90%;
+  height: 120px;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.form-control.ok input {
+  border: 3px solid rgb(10, 243, 10);
+}
+
+.form-control.falla input {
+  border: 3px solid red;
+}
+
+.form-control p {
+  visibility: hidden;
+  position: absolute;
+  font-size: small;
+  font-weight: 500;
+  text-align: right;
+}
+
+.form-control.falla p {
+  visibility: visible;
+  color: red;
+}
+
+
+/* --------------------------ICONO CONTACTO------------------------- */
+
+.icon-location2 {
+  font-size: 2rem;
+  display: inline-block;
+  animation: zoomInLeft;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.icon-mail {
+  font-size: 2rem;
+  display: inline-block;
+  animation: flip;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#desarrollo {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #0f0;
+  opacity: 0.6;
+}
+
+
+/* ----------------------MEDIAQUERIES-------------------- */
+
+@media (max-width: 768px) {
+
+  * {
+    font-size: 10px
+  }
+
+  .itemCarrouselTarjeta h5,
+  p,
+  a {
+    margin-top: 70%;
+    display: none;
+  }
+
+  #sobremi p {
+    word-break: keep-all;
+    text-shadow: none;
+  }
+
+  #porfolio h1 {
+    font-size: 5rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .navbar ul li a {
+    font-size: 0.8em;
+  }
+
+  #portada {
+    overflow: scroll;
+  }
+}

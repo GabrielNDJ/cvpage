@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+  <title>Gabriel Nieto De Jesus</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="imagen/iconos/fonts.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+
+  <!--Icono del titulo-->
+  <link rel="shortcut icon" href="imagen/ingeniero.png" />
+
+</head>
+
+<body>
+
+  <header>
+
+    <!-- EFECTO MATRIX -->
+
+    <canvas width="500" height="150" id="canv">
+      <script src="js/script.js"></script>
+    </canvas>
+
+
+    <!--BOTON SUBIR-->
+
+    <button class="btn-scrolltop" id="btn_scrolltop">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+    <!---------------------NAV----------------------------------->
+
+    <div class="navbar" id="menu">
+      <img src="imagen/ingeniero.png" class="logo" alt="Main Logo">
+      <ul>
+        <li><a href="#sobremi">SOBRE MI</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!--PORTADA-->
+
+  <main class="portada" id="portada">
+    <div class="textocaja" id="textocaja">
+      <h3>Bienvenidos a mi sitio web:</h3>
+      <br>
+      <h2 class="titulo">Soy <br> <span class="typed"></span></h2>
+      <br>
+      <div class="boton">
+        <a href="guardar/cv.pdf" download="CvGnj.pdf" class="btn-neon">
+          <span id="s1"></span>
+          <span id="s2"></span>
+          <span id="s3"></span>
+          <span id="s4"></span>
+          DESCARGAR CV
+        </a>
+      </div>
+      <br>
+      <div class="sobremi" id="sobremi">
+        <h2>Sobre mi:</h2>
+        <p>Me inicie en el mundo informático desde una edad temprana haciendo uso de toda la información que fui
+          adquiriendo a lo largo del tiempo,
+          principalmente en la parte hardware. Poseo experiencia de más de 10 años en reparación y armado de PC, cámaras
+          ip, entre otros.
+          Mi trabajo se define por una dedicación minuciosa y por la comunicación práctica con clientes, donde, a traves
+          de la honestidad y transparencia
+          en la información, apunto a brindar un servicio de calidad.
+        </p>
+        <p>Años mas tarde incursioné en el área software, un mundo que me apasiona y no deja de sorprenderme día a día.
+          Es asi que hoy me desarrollo esencialmente como Full Stack Web enfocado en una capacitación continua que me
+          peremite seguir profesionalizándome y trabajas de manera eficiente.
+        </p>
+        <p>Me presento com una persona flexible, de rápida adaptacion a la hora de trabajar en equipo, resolutivo y
+          enfocado en los resultados.
+        </p>
+      </div>
+      <div class="enlaceiconos" id="enlacesiconos">
+        <a href="https://www.linkedin.com/in/gabriel-nieto-de-jesus/" target="_blank">
+          <span class="icon-linkedin"></span></a>
+        <a href="https://github.com/GabrielNDJ" target="_blank">
+          <span class="icon-github"></span></a>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/main.js"></script>
+
+
+  <!-- SERVICIOS -->
+
+  <section class="clients" id="skills">
+    <h2 class="section-heading">Skills</h2>
+    <p class="section-txt">Éstos son algunos de los lenguajes/herramientas que utilizo:</p>
+    <div class="skills">
+      <div class="client-banners">
+        <img src="imagen/skills/html5.png" alt="logo-html5" />
+        <img src="imagen/skills/css3.png" alt="logo-css3" />
+        <img src="imagen/skills/js.png" alt="logo-js" />
+        <img src="imagen/skills/hub.png" alt="logo-hub" />
+        <img src="imagen/skills/bootstrap.png" alt="logo-bootstrap" />
+        <img src="imagen/skills/git.png" alt="logo-git" />
+        <img src="imagen/skills/visual.png" alt="logo-visual" />
+        <img src="imagen/skills/mysql.png" alt="logo-mysql" />
+        <img src="imagen/skills/java.png" alt="logo-java" />
+        <img src="imagen/skills/piton.png" alt="logo-python" />
+      </div>
+      <div class="client-banners">
+        <img src="imagen/skills/html5.png" alt="logo-html5" />
+        <img src="imagen/skills/css3.png" alt="logo-css3" />
+        <img src="imagen/skills/js.png" alt="logo-js" />
+        <img src="imagen/skills/hub.png" alt="logo-hub" />
+        <img src="imagen/skills/bootstrap.png" alt="logo-bootstrap" />
+        <img src="imagen/skills/git.png" alt="logo-git" />
+        <img src="imagen/skills/visual.png" alt="logo-visual" />
+        <img src="imagen/skills/mysql.png" alt="logo-mysql" />
+        <img src="imagen/skills/java.png" alt="logo-java" />
+        <img src="imagen/skills/piton.png" alt="logo-python" />
+      </div>
+    </div>
+    <p class="section-txt">
+      Poniendolo en práctica a diario.</p>
+  </section>
+
+
+  <!-- PORFOLIO-->
+
+  <section class="portfolio" id="portfolio">
+    <br>
+    <h1>PORTFOLIO:</h1>
+    <br>
+    <div class="carrousel">
+      <div class="conteCarrousel">
+        <div class="itemCarrousel" id="itemCarrousel-1">
+          <div class="itemCarrouselTarjeta">
+            <h5>PORTFOLIO 1</h5>
+            <p>Web reponsive, hecha con grid y flex box.</p>
+            <a href="https://github.com/GabrielNDJ/Gnj/tree/main/porfolio/porfolio1" target="_blank">
+              <span class="icon-github"></span></a>
+            <a href="porfolio/porfolio1/index.html" target="_blank">
+              <span class="icon-link"></span></a>
+          </div>
+          <div class="itemCarrouselArrows">
+            <a href="#itemCarrousel-3">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="#itemCarrousel-2">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-2">
+          <div class="itemCarrouselTarjeta">
+            <h5>PORTFOLIO 2</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <a href="https://github.com/GabrielNDJ" target="_blank">
+              <span class="icon-github"></span></a>
+            <a href="https://github.com/GabrielNDJ" target="_blank">
+              <span class="icon-link"></span></a>
+          </div>
+          <div class="itemCarrouselArrows">
+            <a href="#itemCarrousel-1">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="#itemCarrousel-3">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-3">
+          <div class="itemCarrouselTarjeta">
+            <h5>PORTFOLIO 3</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <a href="https://github.com/GabrielNDJ" target="_blank">
+              <span class="icon-github"></span></a>
+            <a href="https://github.com/GabrielNDJ" target="_blank">
+              <span class="icon-link"></span></a>
+          </div>
+          <div class="itemCarrouselArrows">
+            <a href="#itemCarrousel-2">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="#itemCarrousel-1">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="conteCarrouselController">
+        <a href="#itemCarrousel-1">•</a>
+        <a href="#itemCarrousel-2">•</a>
+        <a href="#itemCarrousel-3">•</a>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/arriba.js"></script>
+
+</body>
+
+
+<footer>
+
+  <!--CONTACTO-->
+
+  <section id="contact" class="contact">
+    <div class="titulo-contacto">
+      <br>
+      <h2>Contacto:</h2>
+      <br>
+    </div>
+    <div class="contenedor" id="contactarse">
+      <div class="location">
+        <i class="icon-location2"></i>
+        <h4>Location:</h4>
+        <p>Barracas.<br>Argentina.</p>
+      </div>
+      <div class="mail">
+        <i class="icon-mail"></i>
+        <h4>Email:</h4>
+        <p>info@gabrielnietodejesus.com.ar<br>gnj@gabrielnietodejesus.com.ar</p>
+      </div>
+    </div>
+
+
+    <!-- CONTACTO FORMULARIO -->
+
+    <div class="formulario">
+      <form action="https://formspree.io/f/xoqrlaok" method="post" id="form" class="php-email-form">
+        <div class="datoscliente">
+          <div class="formularionombre">
+            <input type="text" name="name" class="form-control" id="nombre" placeholder="Nombre">
+            <p></p>
+          </div>
+          <div class="formularioemail">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+            <p></p>
+          </div>
+        </div>
+        <div class="formularioasunto">
+          <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto">
+          <p></p>
+        </div>
+        <div class="formulariomensaje">
+          <textarea type="text" class="form-control" name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+          <p></p>
+        </div>
+        <button type="submit" class="btn-neon" style="background-color: rgb(65, 14, 122);">
+          <span id="s1"></span>
+          <span id="s2"></span>
+          <span id="s3"></span>
+          <span id="s4"></span>Enviar Mensaje</button>
+        <br>
+        <br>
+        <h3 id="desarrollo">Desarrollado por: G.N.J.</h3>
+      </form>
+      <div id="error"></div>
+    </div>
+  </section>
+
+  <script src="js/formulario.js"></script>
+
+</footer>
+</html>
